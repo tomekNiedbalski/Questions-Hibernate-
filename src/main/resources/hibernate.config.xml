@@ -11,10 +11,10 @@
                 name="hibernate.connection.driver_class">com.mysql.jdbc.Driver
         </property>
         <property
-                name="hibernate.connection.url">jdbc:mysql://localhost:3306/jdbc_exercise?useSSL=false
+                name="hibernate.connection.url">jdbc:mysql://localhost:3306/beginner_schema?useSSL=false
         </property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">Martom44</property>
+        <property name="hibernate.connection.username">beginner</property>
+        <property name="hibernate.connection.password">beginner</property>
         <property name="hibernate.hbm2ddl.auto">validate</property>
         <property name="hibernate.show_sql">false</property>
         <property name="hibernate.format_sql">true</property>

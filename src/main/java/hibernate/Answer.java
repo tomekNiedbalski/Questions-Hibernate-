@@ -11,10 +11,23 @@ public class Answer {
     @Id
     @Column(name = "id")
     private int id;
-    @Column(name = "question_id")
-    private int question_id;
+
     @Column(name = "text")
     private String text;
+
     @Column(name = "data")
     private Date date;
+
+    @ManyToOne
+    @JoinColumn(name = "question_id")
+    private Question question;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    @Override
+    public String toString() {
+        return text;
+    }
 }
