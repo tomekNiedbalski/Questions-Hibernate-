@@ -7,11 +7,11 @@ public class Menu {
     private AnswerFunctions answerFunctions = new AnswerFunctions();
     private QuestionFunctions questionFunctions = new QuestionFunctions();
 
-    public void start(){
-        while(true){
+    public void start() {
+        while (true) {
             printMenu();
             int userChoice = userInteraction.intChoice();
-            switch (userChoice){
+            switch (userChoice) {
                 case 0:
                     return;
                 case 1:
@@ -28,11 +28,14 @@ public class Menu {
                     break;
                 case 5:
                     userFunctions.getAnswersToQuestionsByUser();
+                    break;
+                default:
+                    System.out.println("Please select correct number!");
             }
         }
     }
 
-    private void printMenu(){
+    private void printMenu() {
         System.out.println("Main menu:");
         System.out.println("0. Exit");
         System.out.println("1. Register");

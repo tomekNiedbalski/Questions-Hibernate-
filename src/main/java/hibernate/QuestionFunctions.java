@@ -7,8 +7,8 @@ import java.util.List;
 
 public class QuestionFunctions {
 
-    DatabaseSessionProvider databaseSessionProvider = DatabaseSessionProvider.getInstance();
-    UserInteraction userInteraction = new UserInteraction();
+    private DatabaseSessionProvider databaseSessionProvider = DatabaseSessionProvider.getInstance();
+    private UserInteraction userInteraction = new UserInteraction();
 
     public List<Question> getAllQuestions(){
 

@@ -16,7 +16,7 @@ public class UserInteraction {
         try {
             intChoice = Integer.parseInt(choice);
         } catch (NumberFormatException e) {
-            System.out.println("Proszę podać cyfrę!");;
+            e.getMessage();
         }
         return intChoice;
     }
